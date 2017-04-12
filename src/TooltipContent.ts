@@ -11,8 +11,7 @@ import {Component, Input, AfterViewInit, ElementRef, ChangeDetectorRef} from "@a
      role="tooltip">
     <div class="tooltip-arrow"></div> 
     <div class="tooltip-inner">
-        <ng-content></ng-content>
-        {{ content }}
+        <div [outerHTML]="content"></div>
     </div> 
 </div>
 `
